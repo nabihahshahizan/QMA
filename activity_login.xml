@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#B8D8F8"
+    tools:context=".MainActivity">
+
+    <EditText
+        android:id="@+id/editTextNRIC"
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textViewLogin"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="24dp"
+        android:drawableStart="@drawable/ic_user"
+        android:drawablePadding="24dp"
+        android:ems="10"
+        android:foregroundGravity="center"
+        android:hint="Enter your NRIC"
+        android:inputType="textPersonName" />
+
+    <EditText
+        android:id="@+id/editTextPassword"
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/editTextNRIC"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="20dp"
+        android:drawableStart="@drawable/ic_password"
+        android:drawablePadding="24dp"
+        android:ems="10"
+        android:hint="Enter your password"
+        android:inputType="textPassword" />
+
+    <Button
+        android:id="@+id/buttonLogin"
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/editTextPassword"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="20dp"
+        android:backgroundTint="#040580"
+        android:text="Login" />
+
+    <TextView
+        android:id="@+id/textViewLogin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="200dp"
+        android:gravity="center"
+        android:text="Login"
+        android:textColor="#040404"
+        android:textSize="34sp"
+        android:textStyle="bold"/>
+
+
+    <TextView
+        android:id="@+id/textViewAskToSignUp"
+        android:layout_marginTop="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/buttonLogin"
+        android:layout_centerInParent="true"
+        android:text="Don't have account? Sign Up "
+        android:textColor="#020202"
+        android:textSize="16sp" />
+
+
+</RelativeLayout>
