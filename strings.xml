@@ -1,0 +1,27 @@
+<resources>
+    <string name="app_name">QMA</string>
+    <string name="sign_up">Sign Up</string>
+    <string name="from">From</string>
+    <string name="track">Track:</string>
+    <string name="covid_19_status">Covid-19 Status:</string>
+    <string name="quarantine_location">Quarantine Location</string>
+    <string name="no_phone">No. Phone</string>
+    <string name="full_name">Full Name</string>
+    <string name="password">Password</string>
+    <string name="arrival">Arrival</string>
+    <string name="nric">NRIC</string>
+    <string name="positive">Positive</string>
+    <string name="negative">Negative</string>
+    <string name="countdown">Countdown</string>
+    <string name="check_up">Check Up</string>
+    <string name="logout">Logout</string>
+    <string name="profile">Profile</string>
+    <string name="invalid_nric">Please enter your NRIC without -"</string>
+    <string name="invalid_number">Please enter a valid phone number</string>
+    <string name="invalid_password">"Please enter a strong password (minimum 8, at least 1 uppercase, 1 lowercase, and 1 special character) "</string>
+    <string name="invalid_fullname">Please enter your full name</string>
+    <string name="invalid_quarantinelocation">Please enter your quarantine location</string>
+    <string name="invalid_trackfrom">Please enter this field</string>
+    <string name="invalid_trackarrival">Please enter this field</string>
+    <string name="invalid_covid_status">Please tick either one</string>
+</resources>
