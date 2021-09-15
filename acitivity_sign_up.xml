@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#B8D8F8"
+    tools:context=".SignUp">
+
+    <TextView
+        android:id="@+id/textViewSignUp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="@string/sign_up"
+        android:textColor="#040404"
+        android:textSize="34sp"
+        android:textStyle="bold"
+        android:paddingTop="40dp"/>
+
+    <EditText
+        android:id="@+id/editTextNRIC"
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textViewSignUp"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="5dp"
+        android:drawableStart="@drawable/ic_user"
+        android:drawablePadding="24dp"
+        android:ems="10"
+        android:foregroundGravity="center"
+        android:hint="@string/nric"
+        android:inputType="textPersonName"/>
+
+    <EditText
+        android:id="@+id/editTextPassword"
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/editTextNRIC"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="5dp"
+        android:drawableStart="@drawable/ic_password"
+        android:drawablePadding="24dp"
+        android:ems="10"
+        android:hint="@string/password"
+        android:inputType="textPassword" />
+
+    <EditText
+        android:id="@+id/editTextFullname"
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/editTextPassword"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="5dp"
+        android:drawableStart="@drawable/ic_fullname"
+        android:drawablePadding="24dp"
+        android:ems="10"
+        android:hint="@string/full_name"
+        android:inputType="textPersonName" />
+
+    <EditText
+        android:id="@+id/editTextNoPhone"
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/editTextFullname"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="5dp"
+        android:drawableStart="@drawable/ic_no_phone"
+        android:drawablePadding="24dp"
+        android:ems="10"
+        android:hint="@string/no_phone"
+        android:inputType="phone|number" />
+
+    <EditText
+        android:id="@+id/editTextQuarantineLocation"
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/editTextNoPhone"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="5dp"
+        android:drawableStart="@drawable/ic_quarantine_location"
+        android:drawablePadding="24dp"
+        android:ems="10"
+        android:hint="@string/quarantine_location"
+        android:inputType="textPersonName" />
+
+
+    <TextView
+        android:id="@+id/textViewCovidStatus"
+        android:layout_width="226dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/editTextQuarantineLocation"
+        android:layout_marginTop="5dp"
+        android:gravity="center"
+        android:nextFocusLeft="@id/radio_positive"
+        android:text="@string/covid_19_status"
+        android:textColor="@color/black"
+        android:textSize="18sp" />
+
+    <RadioGroup
+        android:id="@+id/radio_covid_status"
+        android:layout_width="225dp"
+        android:layout_height="63dp"
+        android:layout_below="@id/editTextQuarantineLocation"
+        android:layout_marginLeft="-141dp"
+        android:layout_toRightOf="@id/editTextQuarantineLocation">
+
+        <RadioButton
+            android:id="@+id/radio_positive"
+            android:layout_width="match_parent"
+            android:layout_height="36dp"
+            android:text="@string/positive"
+            android:textSize="18sp" />
+
+        <RadioButton
+            android:id="@+id/radio_negative"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/negative"
+            android:textSize="18sp" />
+
+    </RadioGroup>
+
+    <TextView
+        android:id="@+id/textViewTrack"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textViewCovidStatus"
+        android:layout_marginTop="45dp"
+        android:gravity="center"
+        android:text="@string/track"
+        android:textColor="@color/black"
+        android:textSize="18sp" />
+
+    <EditText
+        android:id="@+id/editTextTrackFrom"
+        android:layout_width="225dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textViewCovidStatus"
+        android:layout_toRightOf="@id/textViewTrack"
+        android:layout_marginTop="45dp"
+        android:drawableStart="@drawable/ic_location"
+        android:drawablePadding="24dp"
+        android:ems="10"
+        android:foregroundGravity="center"
+        android:hint="@string/from"
+        android:inputType="textPersonName" />
+
+    <EditText
+        android:id="@+id/editTextTrackArrival"
+        android:layout_width="225dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/editTextTrackFrom"
+        android:layout_toRightOf="@id/textViewTrack"
+        android:layout_marginTop="5dp"
+        android:drawableStart="@drawable/ic_location"
+        android:drawablePadding="24dp"
+        android:ems="10"
+        android:foregroundGravity="center"
+        android:hint="@string/arrival"
+        android:inputType="textPersonName" />
+
+    <Button
+        android:id="@+id/buttonSignUp"
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/editTextTrackArrival"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="40dp"
+        android:backgroundTint="#040580"
+        android:text="@string/sign_up" />
+
+    <TextView
+        android:id="@+id/textViewGoBackToLogin"
+        android:layout_marginTop="5dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/buttonSignUp"
+        android:layout_centerInParent="true"
+        android:text="Already Have an Account? Login Here "
+        android:textColor="#020202"
+        android:textSize="16sp" />
+
+
+</RelativeLayout>
